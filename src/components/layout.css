@@ -31,10 +31,11 @@ a {
   list-style: none;
   text-decoration: none;
   color: inherit;
+  transition: 0.3s;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: hsl(250, 92%, 60%);
 }
 
 .pagewrapper {
@@ -64,11 +65,6 @@ header {
 
 h1 {
   font-size: clamp(0.8em, 2.5vw, 2em);
-  transition: 0.4s;
-}
-
-h1:hover {
-  color: hsl(250, 92%, 60%);
 }
 
 header ul {
