@@ -1,11 +1,12 @@
 //gatsby-config.js
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 const strapiConfig = {
-  apiURL: process.env.STRAPI_API_URL || "http://127.0.0.1:1337",
+  apiURL: process.env.STRAPI_API_URL,
   collectionTypes: ["post", "category", "author"],
+  // accessToken: process.env.STRAPI_TOKEN,
 };
 
 module.exports = {
